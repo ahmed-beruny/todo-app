@@ -7,6 +7,9 @@ export default function Index() {
   return (
     <div>
         <Header />
+        <div>
+          <h1>Welcome to Beruny's Dashboard</h1>
+        </div>
         <Content />
         <Footer />
     </div>

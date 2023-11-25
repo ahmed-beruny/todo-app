@@ -1,25 +1,4 @@
 .add-todo-btn{
-    margin: rem 0;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #1a1a1a;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    height: 5rem;
-    width: 8rem;
-}
-
-.list-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.list-container button{
     margin: 0.5rem 0;
     padding: 0.5rem 1rem;
     border: none;
@@ -29,4 +8,53 @@
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.list-container button{
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.list-container .remove-btn{
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #d70202;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+.list-container .add-list input{
+    margin: 0.5rem 0rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.list-container .toBeRemoved{
+    text-decoration: line-through;
+    color: #d70202;
 }
