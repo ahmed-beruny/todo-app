@@ -1,6 +1,7 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 import Login from './components/Login/Login'
 import Dashboard from './components/Dashboard';

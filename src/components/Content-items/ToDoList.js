@@ -22,7 +22,7 @@ const ToDoList = () => {
 
   return (
     <div className='list-container'>
-      <button onClick={handleAddItem}>Add</button>
+      <button className='add-todo-btn' onClick={handleAddItem}>Add</button>
       <ul>
         {items.map((item, index) => (
           <li key={index}>
