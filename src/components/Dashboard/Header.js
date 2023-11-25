@@ -5,7 +5,10 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const { logout } = useAuth0();
+  const { user,logout } = useAuth0();
+  if(!user){
+    return <div>Loading...</div>
+  }
 
   return (
     <div className='header-container'>
@@ -16,6 +19,7 @@ const Header = () => {
       </div>
 
       <div className='right'>
+        <Link to='/profile'>{user.name}</Link>
         <button onClick={() => logout()}>Logout</button>
       </div>
 
